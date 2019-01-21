@@ -13,7 +13,7 @@ public class MainServeur {
         FtpServeur unFTP = new FtpServeur(port);
         unFTP.open();
 
-        System.out.println("Votre serveur FTP est maintenant initialisé \n Je suis en attente de clients... ;-) !");
+        System.out.println("Votre serveur FTP est maintenant initialisé \n Je suis en attente d'un ou des clients... ;-) !");
 
 
 //        for(int i = 0; i < 1; i++){

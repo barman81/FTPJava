@@ -1,4 +1,4 @@
-package Processor;
+package Client;
 
 import java.io.*;
 import java.net.Socket;
@@ -6,7 +6,9 @@ import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
+/**
+ * Classe qui permet de gérer l'ensemble d'une connexion au serveur FTP.
+ */
 public class ClientConnexion implements Runnable{
     /**
      * Socket qui permet de se connecter au serveur.
@@ -24,35 +26,35 @@ public class ClientConnexion implements Runnable{
     private BufferedInputStream reader = null;
 
     /**
-     * Permet de récupérer la saisie du clavier de la console.
+     * Permet de récuperer la saisie du clavier de la console.
      */
     private Scanner sc = new Scanner(System.in);
 
 
     /**
-     * Liste des commandes disponibles pour notre serveur. Selon la commande utilisée il ne ferra pas la même chose.
+     * Liste des commandes disponibles pour notre serveur. Selon la commande utilisee il ne ferra pas la meme chose.
      */
     private ArrayList<String> listCommands = new ArrayList<String>() ;
 
     /**
-     * Compteur initialisé à 0. Permet de stocker le nombre de client connecté.
+     * Compteur initialisé par defaut à 0. Permet de stocker le nombre de client connecte.
      */
     private static int count = 0;
 
     /**
-     * Permet de nommer le client en cour
+     * Permet de nommer le client en cour.
      */
     private String name = "Client-";
 
     /**
-     * Chemin de stockage des documents téléchargés.
+     * Chemin de stockage des documents téléchargés. Peut être modifié.
      */
     private String path="/tmp/result";
 
     /**
      * Constructeur d'un ClientConnexion.
-     * @param host adresse Ip du serveur
-     * @param port port du serveur
+     * @param host Adresse Ip du serveur
+     * @param port Port du serveur
      */
     public ClientConnexion(String host, int port){
         FillCommandes();
@@ -67,7 +69,7 @@ public class ClientConnexion implements Runnable{
     }
 
     /**
-     * Méthode qui permet d'ajouter une commande à la liste des commandes disponibles.
+     * Methode qui permet d'ajouter une commande à la liste des commandes disponibles.
      */
     private void FillCommandes() {
         listCommands.add("RETR");
@@ -77,9 +79,10 @@ public class ClientConnexion implements Runnable{
     }
 
     /**
-     * Méthode qui lance un thread Client pour se connecter au serveur FTP. On peut lancer au maximum 10 thread de connexion. Soit maximum 10 connexions clientes. Evite le while 1... et donc les DDOS.
+     * Methode qui lance un thread Client pour se connecter au serveur FTP.
      */
     public void run(){
+        //limite de connexion 10.
         for(int i =0; i < 10; i++){
             try {
                 Thread.currentThread().sleep(1000);
@@ -89,15 +92,16 @@ public class ClientConnexion implements Runnable{
             try {
                 writer = new PrintWriter(connexion.getOutputStream(), true);
                 reader = new BufferedInputStream(connexion.getInputStream());
-                System.out.println("Je me connecte au serveur FTP via la " + connexion.toString() + "\n");
-                String laCommande = getCommand();
+                //On envoie la commande au serveur
+                String commande = getCommand();
                 //String file=getFile();
-                send(laCommande);
-                System.out.println("Commande " + laCommande + " envoyée au serveur");
+                writer.write(commande);
+                writer.flush();
+                System.out.println("Commande " + commande + " envoyée au serveur");
                 //On attend la réponse
                 String response = read();
                 System.out.println("\t * " + name + " : Réponse reçue " + response);
-                switch(laCommande) {
+                switch(commande) {
                     case "RETR"://récupération de fichier du serveur ftp
                         writeFile();
                         break;
@@ -111,7 +115,7 @@ public class ClientConnexion implements Runnable{
                         displayEndMess();
                         break;
                     default :
-                        laCommande = "Commande inconnu !";
+                        commande = "Commande inconnu !";
                         break;
                 }
             } catch (IOException e1) {
@@ -123,23 +127,19 @@ public class ClientConnexion implements Runnable{
                 e.printStackTrace();
             }
         }
-        send("CLOSE");
+        //send("CLOSE");
+        writer.write("Close");
+        writer.flush();
+        writer.close();
     }
 
     /**
-     * Méthode qui permet d'envoyer une commande passée en paramètre.
+     * Methode qui permet d'envoyer une commande passee en paramètre.
      * @param str commande à envoyer.
      */
     public void send(String str) {
-        if(str != "CLOSE") {
-            writer.write(str);
-            writer.flush();
-        }
-        else {
-            writer.write(str);
-            writer.flush();
-            writer.close();
-        }
+        writer.write(str);
+        writer.flush();
     }
 
     /**
@@ -151,6 +151,10 @@ public class ClientConnexion implements Runnable{
         System.out.println(str);
     }
 
+    /**
+     *
+     * @throws IOException
+     */
     public void deleteFile() throws IOException {
         String file="";
         boolean r=true;
@@ -164,7 +168,7 @@ public class ClientConnexion implements Runnable{
     }
 
     /**
-     * Méthode qui permet de suppirmer un fichier du serveur.
+     * Methode qui permet de suppirmer un fichier du serveur.
      * @param file nom du fichier à supprimer.
      */
     public void deleteFile(String file) {
@@ -228,8 +232,8 @@ public class ClientConnexion implements Runnable{
     }
 
     /**
-     * Recupère les données du fichier envoyés.
-     * @return File nom du fichier demandé.
+     * Recupere les donnees du fichier envoyes.
+     * @return File nom du fichier demande.
      */
     private File getFileSend() {
         String reponse = "";
@@ -247,7 +251,7 @@ public class ClientConnexion implements Runnable{
     }
 
     /**
-     * Récupération du texte du fichier
+     * Recuperation du texte du fichier
      * @return String contenu du fichier.
      * @throws IOException
      */
@@ -258,7 +262,7 @@ public class ClientConnexion implements Runnable{
     }
 
     /**
-     * Récupération de ??
+     * Recuperation de ??
      * @return String
      */
     private String getFile() {
@@ -275,15 +279,18 @@ public class ClientConnexion implements Runnable{
         return reponse;
     }
 
-
+    /**
+     *
+     * @throws IOException
+     */
     private void writeFile() throws IOException {
         String fileName=getFile();
         writeFile(fileName);
     }
 
     /**
-     * Méthode qui permet d'écrire un fichier.
-     * @param fileName nom du fichier
+     * Methode qui permet d'écrire un fichier. Peut retourner une exception du type IOException.
+     * @param fileName Nom du fichier.
      * @throws IOException
      */
     public void writeFile(String fileName) throws IOException {
@@ -300,17 +307,16 @@ public class ClientConnexion implements Runnable{
     }
 
 
-    //Méthode qui permet d'envoyer des commandeS de façon aléatoire
 
     /**
-     * Méthode qui permet d'envoyer la commande qu'on rentre.
+     * Methode qui permet d'envoyer la commande qu'on rentre.
      * @return String laCommande
      */
     private String getCommand(){
         boolean encore=true;
         String reponse = "";
         while (encore) {
-            displayMessage("Les commandes suivantes sont disponibles "+ getListCommandes());
+            displayMessage("Vous avez le droit aux commande "+ getListCommandes());
             reponse = sc.nextLine().toUpperCase();
             if(listCommands.contains(reponse)){
                 encore=false;
@@ -335,7 +341,7 @@ public class ClientConnexion implements Runnable{
 
 
     /**
-     * Méthode pour lire les réponses envoyées par le serveur.
+     * Methode pour lire les reponses envoyees par le serveur.
      * @return
      * @throws IOException
      */

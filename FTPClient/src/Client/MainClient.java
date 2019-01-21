@@ -1,7 +1,4 @@
-package Processor;
-
-import java.io.IOException;
-import java.util.Scanner;
+package Client;
 
 /**
  * Classe qui permet le lancement d'une connexion cliente.

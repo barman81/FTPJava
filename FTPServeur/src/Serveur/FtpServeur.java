@@ -4,14 +4,32 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/**
+ *
+ */
 public class FtpServeur {
+    /**
+     * Propriété IP (type string) avec une valeur par défaut : 127.0.0.1
+     */
     private String ip="127.0.0.1";
+    /**
+     * Port que l'on veut définir. C'est celui qu on donnera aux clients qui veulent discuter avec le serveur. Valeur par défaut 1234.
+     */
     private int port = 1234;
+
+    /**
+     * Socket qui permet de faire transiter les informations.
+     */
     private ServerSocket socketServeur;
+
+    /**
+     *
+     */
     private int fileAttente = 100;
 
     /**
-     * Constructeur par défaut d'un serveur FTP.
+     * Constructeur par défaut d'un serveur FTP. Utilise les valeurs par défaut définis dans les propriétés plus hauts.
+     *
      */
     public FtpServeur(){
         this.port = getFreePort();
@@ -72,7 +90,7 @@ public class FtpServeur {
     }
 
     /**
-     *
+     * Méthode qui ouvre le serveur.
      */
     public void open(){
 //Execution dans un thread à part vu qu'il est dans une boucle infinie.

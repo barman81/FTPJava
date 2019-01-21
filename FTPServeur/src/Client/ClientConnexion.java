@@ -1,20 +1,14 @@
 package Client;
 
-import java.io.BufferedInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.lang.reflect.Array;
+import java.io.*;
 import java.net.Socket;
 import java.net.UnknownHostException;
-import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
+/**
+ * Classe qui permet de gérer l'ensemble d'une connexion au serveur FTP.
+ */
 public class ClientConnexion implements Runnable{
     /**
      * Socket qui permet de se connecter au serveur.
@@ -32,35 +26,35 @@ public class ClientConnexion implements Runnable{
     private BufferedInputStream reader = null;
 
     /**
-     * Permet de récupérer la saisie du clavier de la console.
+     * Permet de recuperer la saisie du clavier de la console.
      */
     private Scanner sc = new Scanner(System.in);
 
 
     /**
-     * Liste des commandes disponibles pour notre serveur. Selon la commande utilisée il ne ferra pas la même chose.
+     * Liste des commandes disponibles pour notre serveur. Selon la commande utilisee il ne ferra pas la meme chose.
      */
     private ArrayList<String> listCommands = new ArrayList<String>() ;
 
     /**
-     * Compteur initialisé à 0. Permet de stocker le nombre de client connecté.
+     * Compteur initialise par defaut a 0. Permet de stocker le nombre de client connecte.
      */
     private static int count = 0;
 
     /**
-     * Permet de nommer le client en cour
+     * Permet de nommer le client en cour.
      */
     private String name = "Client-";
 
     /**
-     * Chemin de stockage des documents téléchargés.
+     * Chemin de stockage des documents telecharges.
      */
     private String path="/tmp/result";
 
     /**
      * Constructeur d'un ClientConnexion.
-     * @param host adresse Ip du serveur
-     * @param port port du serveur
+     * @param host Adresse Ip du serveur
+     * @param port Port du serveur
      */
     public ClientConnexion(String host, int port){
         FillCommandes();
@@ -75,7 +69,7 @@ public class ClientConnexion implements Runnable{
     }
 
     /**
-     * Méthode qui permet d'ajouter une commande à la liste des commandes disponibles.
+     * Methode qui permet d'ajouter une commande a la liste des commandes disponibles.
      */
     private void FillCommandes() {
         listCommands.add("RETR");
@@ -85,7 +79,7 @@ public class ClientConnexion implements Runnable{
     }
 
     /**
-     * Méthode qui lance un thread Client pour se connecter au serveur FTP.
+     * Methode qui lance un thread Client pour se connecter au serveur FTP.
      */
     public void run(){
         //limite de connexion 10.
@@ -140,7 +134,7 @@ public class ClientConnexion implements Runnable{
     }
 
     /**
-     * Méthode qui permet d'envoyer une commande passée en paramètre.
+     * Methode qui permet d'envoyer une commande passee en paramètre.
      * @param str commande à envoyer.
      */
     public void send(String str) {
@@ -157,6 +151,10 @@ public class ClientConnexion implements Runnable{
         System.out.println(str);
     }
 
+    /**
+     *
+     * @throws IOException
+     */
     public void deleteFile() throws IOException {
         String file="";
         boolean r=true;
@@ -170,7 +168,7 @@ public class ClientConnexion implements Runnable{
     }
 
     /**
-     * Méthode qui permet de suppirmer un fichier du serveur.
+     * Methode qui permet de suppirmer un fichier du serveur.
      * @param file nom du fichier à supprimer.
      */
     public void deleteFile(String file) {
@@ -234,8 +232,8 @@ public class ClientConnexion implements Runnable{
     }
 
     /**
-     * Recupère les données du fichier envoyés.
-     * @return File nom du fichier demandé.
+     * Recupere les donnees du fichier envoyes.
+     * @return File nom du fichier demande.
      */
     private File getFileSend() {
         String reponse = "";
@@ -253,7 +251,7 @@ public class ClientConnexion implements Runnable{
     }
 
     /**
-     * Récupération du texte du fichier
+     * Recuperation du texte du fichier
      * @return String contenu du fichier.
      * @throws IOException
      */
@@ -264,7 +262,7 @@ public class ClientConnexion implements Runnable{
     }
 
     /**
-     * Récupération de ??
+     * Recuperation de ??
      * @return String
      */
     private String getFile() {
@@ -281,15 +279,18 @@ public class ClientConnexion implements Runnable{
         return reponse;
     }
 
-
+    /**
+     *
+     * @throws IOException
+     */
     private void writeFile() throws IOException {
         String fileName=getFile();
         writeFile(fileName);
     }
 
     /**
-     * Méthode qui permet d'écrire un fichier.
-     * @param fileName nom du fichier
+     * Methode qui permet d'écrire un fichier. Peut retourner une exception du type IOException.
+     * @param fileName Nom du fichier.
      * @throws IOException
      */
     public void writeFile(String fileName) throws IOException {
@@ -306,10 +307,9 @@ public class ClientConnexion implements Runnable{
     }
 
 
-    //Méthode qui permet d'envoyer des commandeS de façon aléatoire
 
     /**
-     * Méthode qui permet d'envoyer la commande qu'on rentre.
+     * Methode qui permet d'envoyer la commande qu'on rentre.
      * @return String laCommande
      */
     private String getCommand(){
@@ -341,7 +341,7 @@ public class ClientConnexion implements Runnable{
 
 
     /**
-     * Méthode pour lire les réponses envoyées par le serveur.
+     * Methode pour lire les reponses envoyees par le serveur.
      * @return
      * @throws IOException
      */

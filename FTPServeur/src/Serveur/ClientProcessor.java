@@ -6,6 +6,9 @@ import java.net.Socket;
 import java.net.SocketException;
 import java.util.ArrayList;
 
+/**
+ * Classe qui permet de traiter la connexion cliente. Fonctionne en liaison avec la classe ClientConnexion.
+ */
 public class ClientProcessor implements Runnable {
     /**
      * Socket qui permettra de se connecter au serveur.
@@ -21,7 +24,7 @@ public class ClientProcessor implements Runnable {
     private BufferedInputStream reader = null;
 
     /**
-     * Dossier de base du ftp lors de la connexion. Par défaut : "/tmp/base"
+     * Dossier de base du ftp lors de la connexion. Par défaut : "/tmp/base". A adapter selon les systèmes.
      */
     private String pathCourant = "/tmp/base";
     /**
