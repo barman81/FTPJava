@@ -9,7 +9,7 @@ public class MainServeur {
         System.out.println("Bievenue sur le serveur FTP de Maël & Nicolas");
         System.out.println("-----------------------------------------------");
 
-        int port = 1540;
+        int port = 1531;
         FtpServeur unFTP = new FtpServeur(port);
         unFTP.open();
 

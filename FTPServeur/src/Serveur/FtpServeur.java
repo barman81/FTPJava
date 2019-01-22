@@ -95,10 +95,9 @@ public class FtpServeur {
     public void open(){
 //Execution dans un thread à part vu qu'il est dans une boucle infinie.
         boolean isRunning = true;
-        Thread theThread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while(isRunning) try {
+        Thread theThread = new Thread(() -> {
+            while(isRunning) {
+                try {
                     Socket unClient = socketServeur.accept();
                     //Une fois la demande reçue, il faut la traiter dans un thread appart afin de pouvoir traiter plusieurs clients à la fois.
                     System.out.println("Connexion d'un client reçu.");
@@ -107,12 +106,12 @@ public class FtpServeur {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                try {
-                    socketServeur.close();
-                } catch (IOException e){
-                    e.printStackTrace();
-                    socketServeur = null;
-                }
+            }
+            try {
+                socketServeur.close();
+            } catch (IOException e){
+                e.printStackTrace();
+                socketServeur = null;
             }
         });
         theThread.start();
