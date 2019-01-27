@@ -6,9 +6,9 @@ Serveur FTP via des sockets.
 ## Pour débuter
 ### Structure du projet :
 Il y a plusieurs dossiers qui sont :
-    ### FTPClient :
-    ### FTPServeur :
-    ### Javadoc :
+   ### FTPClient :
+   ### FTPServeur :
+   ### Javadoc :
 
 
 ### Utilisation
