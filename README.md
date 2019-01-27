@@ -30,10 +30,13 @@ Ce projet contient 2 sous projets :
 ### A Savoir :
 Par défaut, le Serveur est initialisé sur le port : 1531.
 Le client se connecte donc aussi sur le port 1531.
-
 L'ip par défaut est 127.0.0.1
-
 Le serveur et le client communique donc via : 127.0.0.1:1531 
+
+Le serveur ftp à ses documents dans : "/tmp/base".
+Le client ftp à ses documents stockés dans "/tmp/result".
+
+Si ces dossiers n'existent pas dans /tmp , il faut les créer au préalable pour ne pas avoir de beugs.
 
 ### Côté serveur :
 1 - Démarrer le serveur ftp disponible dans FTPServeur. (Il faut lancer le fichier MainServeur.)
