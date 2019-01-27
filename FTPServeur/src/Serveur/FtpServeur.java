@@ -28,7 +28,7 @@ public class FtpServeur {
     private int fileAttente = 100;
 
     /**
-     * Constructeur par défaut d'un serveur FTP. Utilise les valeurs par défaut définis dans les propriétés plus hauts.
+     * Constructeur par défaut d'un serveur FTP. Utilise les valeurs par défaut définies dans les propriétés plus hauts.
      *
      */
     public FtpServeur(){
@@ -82,7 +82,7 @@ public class FtpServeur {
 
     /**
      *
-     * Méthode qui retourne l'adresse du serveur FTP et son port.
+     * Méthode toString qui retourne l'adresse du serveur FTP et son port.
      * @return Adresse IP du serveur FTP et son port.
      */
     public String toString() {
@@ -100,7 +100,7 @@ public class FtpServeur {
                 try {
                     Socket unClient = socketServeur.accept();
                     //Une fois la demande reçue, il faut la traiter dans un thread appart afin de pouvoir traiter plusieurs clients à la fois.
-                    System.out.println("Connexion d'un client reçu.");
+                    System.out.println("\nConnexion d'un client reçu.");
                     Thread monThread = new Thread(new ClientProcessor(unClient));
                     monThread.start();
                 } catch (IOException e) {

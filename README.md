@@ -3,6 +3,8 @@
 Serveur FTP multi-thread utilisant les sockets.
 Plusieurs clients peuvent se connecter au même serveur FTP.
 
+Adapté du cour d'OpenClassRoom sur les sockets.
+
 ## Pour Commencer : 
 ### Structure du projet :
 Ce projet contient 2 sous projets : 
