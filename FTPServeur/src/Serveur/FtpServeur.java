@@ -65,14 +65,14 @@ public class FtpServeur {
 
     /**
      * Méthode qui crée une nouvelle socket.
-     * @param p
+     * @param port port
      * @param file
      * @return ServerSocket
      */
-    public ServerSocket setSocket(int p,int file) {
+    public ServerSocket setSocket(int port,int file) {
         ServerSocket sock=null;
         try{
-            sock=new ServerSocket(p,file);
+            sock=new ServerSocket(port,file);
         }
         catch(IOException e) {
 
