@@ -1,64 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="FTPClient:jar" />
+      <artifact name="FTPServeur:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="31550c93-84d3-490e-bc97-0d3e76919dca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FTPClient/src/Client/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FTPServeur/src/Client/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FTPServeur/src/Serveur/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Client/ClientConnexion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Client/MainClient.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Client/class-use/ClientConnexion.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Client/class-use/MainClient.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Client/package-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Client/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Client/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Client/package-use.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Serveur/ClientProcessor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Serveur/FtpServeur.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Serveur/MainServeur.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Serveur/class-use/ClientProcessor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Serveur/class-use/FtpServeur.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Serveur/class-use/MainServeur.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Serveur/package-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Serveur/package-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Serveur/package-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/Serveur/package-use.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/allclasses-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/allclasses-noframe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/constant-values.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/deprecated-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/help-doc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-14.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index-files/index-9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/overview-frame.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/overview-summary.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/overview-tree.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/package-list" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javadoc/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClient/src/Processor/ClientConnexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClient/src/Client/ClientConnexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPClient/src/Processor/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClient/src/Client/MainClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPServeur/FTPServeur.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FTPServeur/FTPServeur.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPServeur/src/Client/ClientConnexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTPServeur/src/Client/ClientConnexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPServeur/src/Serveur/ClientProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTPServeur/src/Serveur/ClientProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPServeur/src/Serveur/FtpServeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTPServeur/src/Serveur/FtpServeur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTPServeur/src/Serveur/MainServeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTPServeur/src/Serveur/MainServeur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTPClient/src/Client/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTPClient/src/Client/MainClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,18 +29,20 @@
     <session id="-1111316335">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="MF" value="1" />
           <entry key="iml" value="1" />
           <entry key="java" value="17" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -96,22 +50,24 @@
         <counts>
           <entry key="IDEA_MODULE" value="1" />
           <entry key="JAVA" value="17" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Manifest" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="50" />
-          <entry key="java" value="11464" />
-          <entry key="md" value="223" />
-          <entry key="txt" value="55" />
+          <entry key="java" value="11476" />
+          <entry key="md" value="1985" />
+          <entry key="txt" value="140" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11464" />
-          <entry key="PLAIN_TEXT" value="328" />
+          <entry key="JAVA" value="11476" />
+          <entry key="Markdown" value="1585" />
+          <entry key="PLAIN_TEXT" value="590" />
         </counts>
       </usages-collector>
     </session>
@@ -121,22 +77,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FTPServeur/src/Serveur/MainServeur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="125" selection-start-line="15" selection-start-column="125" selection-end-line="15" selection-end-column="125" />
+            <state relative-caret-position="165">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FTPServeur/src/Client/ClientConnexion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4875#4876#0" expanded="true" />
-                <element signature="e#4901#4902#0" expanded="true" />
-              </folding>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="345">
+                <caret line="23" column="182" selection-start-line="23" selection-start-column="182" selection-end-line="23" selection-end-column="182" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -144,27 +98,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FTPServeur/src/Serveur/FtpServeur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+            <state relative-caret-position="501">
+              <caret line="117" selection-start-line="117" selection-end-line="117" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1795#1796#0" expanded="true" />
-                <element signature="e#1861#1862#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FTPClient/src/Client/ClientConnexion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4758#4759#0" expanded="true" />
-                <element signature="e#4784#4785#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -172,12 +119,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FTPServeur/src/Serveur/ClientProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
+            <state relative-caret-position="570">
               <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1004#1005#0" expanded="true" />
-                <element signature="e#1044#1045#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -211,15 +156,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FTPClient/FTPClient.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FTPClient/src/Client/MainClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+            <state relative-caret-position="120">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -267,6 +207,12 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Maël Baron &lt;mael.baron@laposte.net&gt;" />
+      </list>
+    </option>
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -277,7 +223,6 @@
         <option value="$PROJECT_DIR$/FTPClient/src/Processor/MainClient2.java" />
         <option value="$PROJECT_DIR$/FTPClient/src/Processor/Ftp.java" />
         <option value="$PROJECT_DIR$/FTPServeur/src/Serveur/ClientConnexion.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/FTPClient/src/Processor/MainClient.java" />
         <option value="$PROJECT_DIR$/FTPClient/src/Processor/ClientConnexion.java" />
         <option value="$PROJECT_DIR$/FTPClient/src/Processor/package-info.java" />
@@ -286,10 +231,12 @@
         <option value="$PROJECT_DIR$/FTPServeur/src/Serveur/package-info.java" />
         <option value="$PROJECT_DIR$/FTPClient/src/Client/package-info.java" />
         <option value="$PROJECT_DIR$/FTPServeur/src/Client/ClientConnexion.java" />
-        <option value="$PROJECT_DIR$/FTPServeur/src/Serveur/MainServeur.java" />
-        <option value="$PROJECT_DIR$/FTPServeur/src/Serveur/FtpServeur.java" />
         <option value="$PROJECT_DIR$/FTPServeur/src/Serveur/ClientProcessor.java" />
         <option value="$PROJECT_DIR$/FTPClient/src/Client/ClientConnexion.java" />
+        <option value="$PROJECT_DIR$/FTPServeur/src/Serveur/FtpServeur.java" />
+        <option value="$PROJECT_DIR$/FTPServeur/src/Serveur/MainServeur.java" />
+        <option value="$PROJECT_DIR$/FTPClient/src/Client/MainClient.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -304,6 +251,58 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FTPJava" type="58d84e3e:PackageViewProjectNode" />
+              <item name="FTPClient" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="FTPJava" type="58d84e3e:PackageViewProjectNode" />
+              <item name="FTPServeur" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="FTPJava" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="FTPClient" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="FTPJava" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="FTPClient" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="FTPJava" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="FTPClient" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Client" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="FTPJava" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="FTPServeur" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="FTPJava" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="FTPServeur" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="FTPJava" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="FTPServeur" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Serveur" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -351,59 +350,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="FTPJava" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="FTPClient" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="FTPJava" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="FTPClient" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="FTPJava" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="FTPClient" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Client" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="FTPJava" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="FTPServeur" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="FTPJava" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="FTPServeur" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="FTPJava" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="FTPServeur" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Serveur" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Course" />
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="FTPJava" type="58d84e3e:PackageViewProjectNode" />
-              <item name="FTPClient" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="FTPJava" type="58d84e3e:PackageViewProjectNode" />
-              <item name="FTPServeur" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,7 +358,7 @@
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="ftpjava" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548100885398" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548615626083" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -443,6 +390,19 @@
     <configuration name="FtpServeur" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Serveur.FtpServeur" />
       <module name="FTPServeur" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainClient (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client.MainClient" />
+      <module name="FTPClient" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Client.*" />
@@ -551,14 +511,42 @@
       <option name="project" value="LOCAL" />
       <updated>1548083171204</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ajout Javadoc">
+      <created>1548100930511</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1548100930511</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Ajout Javadoc&#10;Ajout MANIFEST.MF">
+      <created>1548157849512</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1548157849512</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Modif Readme">
+      <created>1548613939340</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1548613939340</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Modif Readme">
+      <created>1548615045724</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1548615045724</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.25107297" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.25822604" />
       <window_info id="Structure" order="1" sideWeight="0.50120485" side_tool="true" weight="0.30487806" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -593,7 +581,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ajout de la section Auteur dans readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la section Auteur dans readme.md" />
+    <MESSAGE value="Ajout Javadoc" />
+    <MESSAGE value="Ajout Javadoc&#10;Ajout MANIFEST.MF" />
+    <MESSAGE value="Modif Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modif Readme" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
@@ -601,10 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
-          <folding>
-            <element signature="e#10065#10066#0" expanded="true" />
-            <element signature="e#10148#10149#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -625,23 +616,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FTPClient/src/Processor/Ftpold.java" />
     <entry file="file://$PROJECT_DIR$/FTPClient/src/Processor/ClientConnexionold.java" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/FTPClient/FTPClient.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/FTPServeur/src/Serveur/package-info.java">
+    <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPServeur/src/Client/ClientConnexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPClient/src/Client/ClientConnexion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPServeur/src/Serveur/ClientProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPClient/src/Client/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="72" selection-start-line="1" selection-start-column="72" selection-end-line="1" selection-end-column="72" />
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -654,70 +665,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FTPServeur/src/Serveur/MainServeur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="125" selection-start-line="15" selection-start-column="125" selection-end-line="15" selection-end-column="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTPServeur/src/Serveur/ClientProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTPServeur/src/Serveur/FtpServeur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1795#1796#0" expanded="true" />
-            <element signature="e#1861#1862#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTPServeur/src/Client/ClientConnexion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4875#4876#0" expanded="true" />
-            <element signature="e#4901#4902#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTPClient/src/Client/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        <state relative-caret-position="165">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FTPClient/src/Client/MainClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+        <state relative-caret-position="120">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FTPClient/src/Client/ClientConnexion.java">
+    <entry file="file://$PROJECT_DIR$/FTPServeur/src/Serveur/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="15">
+          <caret line="1" column="72" selection-start-line="1" selection-start-column="72" selection-end-line="1" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTPServeur/src/Serveur/FtpServeur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4758#4759#0" expanded="true" />
-            <element signature="e#4784#4785#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="345">
+            <caret line="23" column="182" selection-start-line="23" selection-start-column="182" selection-end-line="23" selection-end-column="182" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -726,11 +714,18 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
+          <artifact-editor>
+            <show-content>
+              <type id="artifact" />
+              <type id="library" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>FTPClient:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
