@@ -4,9 +4,11 @@ Serveur FTP via des sockets.
 
 
 ## Pour débuter
-Ce tp est composé de 2 dossiers : 
-  - FTP Client
-  - FTP Serveur
+### Structure du projet :
+Il y a plusieurs dossiers qui sont :
+    ### FTPClient :
+    ### FTPServeur :
+    ### Javadoc :
 
 
 ### Utilisation
